@@ -23,6 +23,10 @@ public class TrainController {
 	public String welcome(){
 		return "welcome";
 	}
+	@GetMapping("/welcome1")
+	public String welcome1(){
+		return "welcome1";
+	}
 	@RequestMapping(method = RequestMethod.POST,value = "/train")
 	public Train createTrain(@RequestBody Train train) {
 		
