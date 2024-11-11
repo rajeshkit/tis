@@ -16,7 +16,7 @@ public class TrainController {
 	private TrainRepository trainRepository;
 	@RequestMapping("/hello")
 	public String hello1() {
-		return "Hello Rajesh";
+		return "This is from hello ";
 	}
 	@RequestMapping(method = RequestMethod.POST,value = "/train")
 	public Train createTrain(@RequestBody Train train) {
